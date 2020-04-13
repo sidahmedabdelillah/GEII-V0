@@ -18,6 +18,6 @@
   },
   "homepage": "https://sidahmedabdelillah.github.io/GEII-V0",
   "dependencies": {
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^1.2.0"
   }
 }
