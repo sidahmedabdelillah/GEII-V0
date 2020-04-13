@@ -1,134 +1,120 @@
 * {
-    box-sizing: border-box;
-}
-
-body {
-    background: white;
-    padding: 0;
+    /*overflow-x: hidden;*/
+    color: #505962;
+    border: 0;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
-ul {
-    list-style: none;
+.no-repeat {
+    background-repeat: no-repeat !important;
+    background-position: center;
+    background-size: cover;
 }
 
 .main {
-    width: 90%;
-    margin: auto;
-    overflow: hidden;
-    max-width: 1080px;
+    padding: 0 !important;
 }
 
-
-/* nav */
-
-.main-nav {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-    height: 10vh;
-    font-size: 16px;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
-    min-height: 60px;
-    max-height: 70px;
-}
-
-.main-nav #nav-logo {
-    width: 120px;
-    height: 60px;
-    height: 8vh;
-    padding-left: 20px;
-    min-height: 50px;
-    max-height: 60px;
-    background-color: rgba(24, 59, 78, 0.8);
-}
-
-.main-nav .nav-items {
-    display: flex;
-    margin: 0;
-    height: 100%;
-}
-
-.main-nav .nav-items li {
-    height: 100%;
-    align-items: center;
-    margin-top: auto;
+/*---- navbar-----*/
+.navbar button {
     color: white;
-    text-align: center;
-    padding: 25px 27px;
 }
 
-a {
-    text-align: center;
+.navbar .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff');
 }
 
-.current {
-    border-bottom: 3px solid #00b0f0;
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.9 rem;
+    letter-spacing: 0.1 rem;
+    background: rgba(0, 0, 0, 0.6) !important;
 }
 
-.main-nav .nav-items li:hover {
-    color: #00b0f0;
-    cursor: pointer;
+.navbar-brand {
+    height: 4 rem;
 }
 
-
-/**carousel***/
-
-.carousel {
-    height: 600px;
-    position: absolute !important;
-    width: 90%;
-    margin: auto !important;
-    top: 0;
-    z-index: -1;
-    overflow: hidden;
-    max-width: 1080px;
+.navbar ul li a {
+    color: white !important;
 }
 
-.my-btn {
-    position: absolute;
-    top: 20px;
+.navbar ul li a:hover {
+    color: #f04b4c !important;
+}
+
+.navbar-brand img {
+    height: 3.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin-left: 0.7rem !important;
+}
+
+.navbar ul li:last-child {
+    margin-left: 40px !important;
+}
+
+.go-right {
+    justify-content: right;
+    color: white !important;
+}
+
+.show .show {
+    background: rgba(0, 0, 0, 0.6) !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.9 rem;
+    letter-spacing: 0.1 rem;
+
+}
+
+/*---slider-----*/
+.carousel-item {
+    height: 100vh;
 }
 
 .carousel-caption {
-    position: absolute;
+    width: 80%;
+    position: absolute !important;
+    right: 0%;
     top: 35%;
-    left: 50%;
+    text-align: center;
 }
 
 .carousel-caption h1 {
+    width: 80% !important;
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 4vw;
     color: #f04b4c;
 }
 
 .carousel-caption p {
+    margin-left: 4vw;
+    text-align: center;
     font-weight: 600;
-}
-
-.cap2 {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-}
-
-.cap2 h1 {
-    font-weight: bold;
-    font-size: 3.5rem;
-    color: #f04b4c;
-}
-
-.cap2 p {
-    font-weight: 600;
-    font-size: 1.8rem;
+    width: 80% !important;
+    font-size: 2vw;
+    color: white;
 }
 
 .btn-primary {
+    align-items: center;
+    padding: auto !important;
+    margin-left: -10vw;
     background-color: #f04b4c !important;
-    margin-right: 10px;
-    width: 130px;
+    margin-right: 2vh;
+    width: 15vw;
+    font-size: 1.5vw;
+    height: 6vw;
+    vertical-align: middle !important;
+
 }
 
 .btn-primary:hover {
@@ -137,8 +123,11 @@ a {
 }
 
 .btn-outline-secondary {
-    width: 130px;
-    margin-left: 10px;
+    height: 6vw;
+    padding: auto !important;
+    font-size: 1.5vw;
+    width: 15vw;
+    margin-left: 2vh;
     color: white !important;
     border-color: white !important;
 }
@@ -146,4 +135,69 @@ a {
 .btn-outline-secondary:hover {
     color: black !important;
     background-color: white !important;
+}
+
+.Foramtion-section {
+    margin-top: 0;
+    text-align: center;
+    padding: 2vh;
+}
+
+.Foramtion-section h1 {
+    margin-bottom: 2vh;
+    color: #193c4e;
+}
+
+.card-image {
+    width: 55px;
+}
+
+.Formation-card {
+    padding: 3vh 0;
+    background: #193c4e;
+    border-radius: 1vw;
+}
+
+.Formation-card h3 {
+    color: #f04b4c;
+}
+
+.Formation-card ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: flex-start;
+}
+
+
+
+.Formation-card ul li {
+    padding: 2vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+
+}
+
+.Formation-card ul li p {
+    margin: auto;
+    color: white !important;
+    font-weight: 400;
+    font-size: 1.8vw;
+    margin-left: 1vw;
+}
+
+@media (max-width: 576px) {
+    .Formation-card ul li p {
+        font-size: 4vw;
+        margin-right: 2vw;
+    }
+
+    .Formation-card {
+        margin: 5vh 0;
+    }
+
+
 }
