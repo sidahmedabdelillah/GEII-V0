@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/sidahmedabdelillah/GEII-V0/issues"
   },
-  "homepage": "https://github.com/sidahmedabdelillah/GEII-V0",
+  "homepage": "https://sidahmedabdelillah.github.io/GEII-V0",
   "dependencies": {
     "gh-pages": "^2.2.0"
   }
